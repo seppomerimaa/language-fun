@@ -1,6 +1,7 @@
 package com.seppomerimaa
 
 import com.seppomerimaa.Automata.{Accept, Reject}
+import com.seppomerimaa.TestAutomatonCompanion.{One, Zero}
 import org.scalacheck.{Gen, Prop}
 import org.scalatest.{FlatSpec, Matchers}
 import org.scalatest.prop.Checkers

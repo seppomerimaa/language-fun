@@ -1,15 +1,12 @@
 package com.seppomerimaa
 
 import com.seppomerimaa.Automata.Accept
-
+import com.seppomerimaa.TestAutomatonCompanion.{One, Zero}
 import org.scalacheck.{Gen, Prop}
 import org.scalatest.{FlatSpec, Matchers}
 import org.scalatest.prop.Checkers
 import org.scalacheck.Prop.BooleanOperators
 
-/**
-  *
-  */
 class TestAutomatonSpec extends FlatSpec with Matchers with Checkers {
   val anyInput = Gen.oneOf(Zero, One)
   val evenZeroes = Gen.listOf(Zero).suchThat(zs => zs.size % 2 == 0)
